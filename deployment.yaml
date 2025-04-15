@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-nodejs-app
+  name: node_js_002
   labels:
-    app: simple-nodejs-app
+    app: node_js_002
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: simple-nodejs-app
+      app: node_js_002
   template:
     metadata:
       labels:
-        app: simple-nodejs-app
+        app: node_js_002
     spec:
       containers:
-      - name: simple-nodejs-app
+      - name: node_js_002
         image: bacdocker/nodejswebappexam:v1  
         ports:
         - containerPort: 3000
