@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: simple-nodejs-app
-  name: simple-nodejs-app
+    app: node_js_002
+  name:  node_js_002
 spec:
   type: NodePort
   ports:
@@ -11,4 +11,4 @@ spec:
       targetPort: 3000
       protocol: TCP
   selector:
-    app: simple-nodejs-app
+    app: node_js_002
